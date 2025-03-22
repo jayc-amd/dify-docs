@@ -30,17 +30,17 @@ Then you can follow the printed instructions to access the GPUStack UI.
 
 Using a LLM hosted on GPUStack as an example:
 
-1. In GPUStack UI, navigate to the "Models" page and click on "Deploy Model", choose `Hugging Face` from the dropdown.
+1. In GPUStack UI, navigate to the **Models** page and click on **Deploy Model**, choose **Hugging Face** from the dropdown.
 
 2. Use the search bar in the top left to search for the model name `Qwen/Qwen2.5-0.5B-Instruct-GGUF`.
 
-3. Click `Save` to deploy the model.
+3. Click **Save** to deploy the model.
 
 ![gpustack-deploy-llm](../../.gitbook/assets/gpustack-deploy-llm.png)
 
 ## Create an API Key
 
-1. Navigate to the "API Keys" page and click on "New API Key".
+1. Navigate to the **API Keys** page and click on **New API Key**.
 
 2. Fill in the name, then click `Save`.
 
@@ -58,7 +58,7 @@ Using a LLM hosted on GPUStack as an example:
 
    - API Key: `Input the API key you copied from previous steps`
 
-   Click "Save" to use the model in the application.
+   Click **Save** to use the model in the application.
 
 ![add-gpustack-llm](../../.gitbook/assets/add-gpustack-llm.png)
 
