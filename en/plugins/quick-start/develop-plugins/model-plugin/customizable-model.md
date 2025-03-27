@@ -320,7 +320,9 @@ After finishing development, test the plugin to ensure it runs correctly. For mo
 
 If you’d like to list this plugin on the Dify Marketplace, see:
 
-Publish to Dify Marketplace
+{% content-ref url="../../../publish-plugins/publish-to-dify-marketplace/" %}
+[publish-to-dify-marketplace](../../../publish-plugins/publish-to-dify-marketplace/)
+{% endcontent-ref %}
 
 ## Explore More
 

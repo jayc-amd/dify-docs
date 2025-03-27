@@ -161,3 +161,11 @@ HTTP Status Code: 403
 **InternalServerException**
 An internal server error occurred. Retry your request.
 HTTP Status Code: 500
+
+## Development Example
+
+You can learn how to develop external knowledge base plugins through the following video tutorial using LlamaCloud as an example:
+
+{% embed url="https://www.youtube.com/embed/FaOzKZRS-2E" %}
+
+For more information about how it works, please refer to the plugin's [GitHub repository](https://github.com/langgenius/dify-official-plugins/tree/main/extensions/llamacloud).
