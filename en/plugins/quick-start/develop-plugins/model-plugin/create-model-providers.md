@@ -1,6 +1,6 @@
 # Create Model Providers
 
-Creating a Model Type Plugin The first step in creating a Model type plugin is to initialize the plugin project and create the model provider file, followed by integrating specific predefined/custom models.
+**Creating a Model Type Plugin**: The first step in creating a Model type plugin is to initialize the plugin project and create the model provider file, followed by integrating specific predefined/custom models.
 
 ### **Prerequisites**
 
