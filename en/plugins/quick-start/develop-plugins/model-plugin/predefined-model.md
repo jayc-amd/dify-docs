@@ -114,7 +114,7 @@ def _invoke(self, model: str, credentials: dict,
     """
 ```
 
-In the implementation, you need to be careful to use two functions to handle synchronized returns and streaming returns separately. This is because functions in Python that contain the yield keyword are recognized as generator functions, and their return type is fixed to Generator. synchronized return and streaming return need to be implemented independently in order to ensure that the logic is clear and to accommodate different return requirements.
+In the implementation, you need to be careful to use two functions to handle synchronized returns and streaming returns separately. This is because functions in Python that contain the yield keyword are recognized as generator functions, and their return type is fixed to Generator. Synchronized return and streaming return need to be implemented independently in order to ensure that the logic is clear and to accommodate different return requirements.
 
 Here's the sample code (the parameters are simplified in the example, so please follow the full parameter list in the actual implementation):
 
