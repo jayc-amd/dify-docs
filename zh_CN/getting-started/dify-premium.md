@@ -1,14 +1,14 @@
 # Dify Premium
 
-Dify Premium 是一款 [AWS AMI](https://docs.aws.amazon.com/zh\_cn/AWSEC2/latest/UserGuide/ec2-instances-and-amis.html) 产品，允许自定义品牌，并可作为 EC2 一键部署到你的 AWS VPC 上。前往 [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-t22mebxzwjhu6) 进行订阅并使用，它适合以下场景：
+Dify Premium 是一款 [AWS AMI](https://docs.aws.amazon.com/zh\_cn/AWSEC2/latest/UserGuide/ec2-instances-and-amis.html) 产品，允许自定义品牌，并可作为 EC2 一键部署到您的 AWS VPC 上。前往 [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-t22mebxzwjhu6) 进行订阅并使用，它适合以下场景：
 
 * 在中小型企业内，需在服务器上创建一个或多应用程序，并且关心数据私有化。
-* 你对 [Dify Cloud](https://docs.dify.ai/v/zh-hans/getting-started/cloud)订阅计划感兴趣，但所需的用例资源超出了[计划](https://dify.ai/pricing)内所提供的资源。
-* 你希望在组织内采用 Dify Enterprise 之前进行 POC 验证。
+* 您对 [Dify Cloud](https://docs.dify.ai/v/zh-hans/getting-started/cloud)订阅计划感兴趣，但所需的用例资源超出了[计划](https://dify.ai/pricing)内所提供的资源。
+* 您希望在组织内采用 Dify Enterprise 之前进行 POC 验证。
 
 ## 设置
 
-如果这是你第一次访问 Dify，请输入管理员初始化密码（设置为你的 EC2 实例 ID）以开始设置过程。
+如果这是您第一次访问 Dify，请输入管理员初始化密码（设置为您的 EC2 实例 ID）以开始设置过程。
 
 部署 AMI 后，通过 EC2 控制台中找到的实例公有 IP 访问 Dify（默认使用 HTTP 端口 80）。
 
@@ -39,9 +39,9 @@ docker-compose -f docker-compose.yaml -f docker-compose.override.yaml up -d
 
 ### 1. 备份数据
 
-1.1 运行 `cd` 命令至你的 Dify 项目路径，新建备份分支。
+1.1 运行 `cd` 命令至您的 Dify 项目路径，新建备份分支。
 
-1.2 运行以下命令，备份你的 docker-compose YAML 文件（可选）。
+1.2 运行以下命令，备份您的 docker-compose YAML 文件（可选）。
 
 ```bash
 cd docker
@@ -57,7 +57,7 @@ tar -cvf volumes-$(date +%s).tgz volumes
 
 ### 2. 升级版本
 
-`v1.0.0` 支持通过 Docker Compose 部署。运行 `cd` 命令至你的 Dify 项目路径，运行以下命令升级 Dify 版本：
+`v1.0.0` 支持通过 Docker Compose 部署。运行 `cd` 命令至您的 Dify 项目路径，运行以下命令升级 Dify 版本：
 
 ```bash
 git checkout 1.0.0 # 切换至 1.0.0 分支
@@ -90,7 +90,7 @@ poetry run flask extract-plugins --workers=20
 
 此命令将提取当前环境中使用的所有模型和工具。workers 参数将决定提取过程中的所使用的并行进程数，可根据需要进行调整。命令运行完成后将生成 `plugins.jsonl` 文件保存结果，该文件包含了当前 Dify 实例中所有工作区的插件信息。
 
-确保你的网络正常访问公网，并支持访问：`https://marketplace.dify.ai`。在 `docker-api-1` 容器内继续运行以下命令：
+确保您的网络正常访问公网，并支持访问：`https://marketplace.dify.ai`。在 `docker-api-1` 容器内继续运行以下命令：
 
 ```bash
 poetry run flask install-plugins --workers=2
@@ -100,9 +100,9 @@ poetry run flask install-plugins --workers=2
 
 </details>
 
-## 定制化
+## 自定义
 
-就像自托管部署一样，你可以根据需要修改 EC2 实例中 `.env` 下的环境变量。然后使用以下命令重新启动 Dify：
+就像自托管部署一样，您可以根据需要修改 EC2 实例中 `.env` 下的环境变量。然后使用以下命令重新启动 Dify：
 
 ```
 docker-compose down
@@ -111,4 +111,4 @@ docker-compose -f docker-compose.yaml -f docker-compose.override.yaml up -d
 
 ## 自定义 WebApp & 品牌
 
-你可以在设置里的 **定制** 中启用此功能，启用 **移除 Powered by Dify** 并上传您自己的标志。
+您可以在设置里的 **自定义** 中启用此功能，启用 **移除 Powered by Dify** 并上传您自己的标志。
