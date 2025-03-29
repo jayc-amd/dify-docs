@@ -64,11 +64,11 @@ After checking all the permission items, tap Enter to complete the creation of t
 
 ### Developing Tools Plugins
 
-#### 1. Create the tool vendor yaml file
+#### 1. Create the tool provider yaml file
 
-The tool vendor file can be understood as the base configuration entry point for a tool type plugin, and is used to provide the necessary authorization information to the tool. This section demonstrates how to fill out that yaml file.
+The tool provider file can be understood as the base configuration entry point for a tool type plugin, and is used to provide the necessary authorization information to the tool. This section demonstrates how to fill out that yaml file.
 
-Go to the `/provider` path and rename the yaml file in it to `google.yaml`. The `yaml` file will contain information about the tool vendor, including the provider name, icon, author, and other details. This information will be displayed when the plugin is installed.
+Go to the `/provider` path and rename the yaml file in it to `google.yaml`. The `yaml` file will contain information about the tool provider, including the provider name, icon, author, and other details. This information will be displayed when the plugin is installed.
 
 Example:
 
@@ -168,7 +168,7 @@ extra:
 
 #### 2. Fill out the tool yaml file
 
-There can be multiple tools under a tool vendor, and each tool needs to be described by a `yaml` file, which contains basic information about the tool, its parameters, its output, and so on.
+There can be multiple tools under a tool provider, and each tool needs to be described by a `yaml` file, which contains basic information about the tool, its parameters, its output, and so on.
 
 Still using the `GoogleSearch` tool as an example, you can create a new `google_search.yaml` file in the `/tools` folder.
 
@@ -277,9 +277,9 @@ class GoogleSearchTool(Tool):
 
 In this example, we simply request the `serpapi` and use `self.create_json_message` to return a string of `json` formatted data. For more information on the types of data returned, you can refer to the [tool](../schema-definition/tool.md) documentation.
 
-#### 4. Completion of tool vendor codes
+#### 4. Completion of tool provider codes
 
-Finally, you need to create a vendor code implementation code that will be used to implement the vendor's credential validation logic. If the credential validation fails, the `ToolProviderCredentialValidationError` exception will be thrown. After successful validation, the `google_search` tool service will be requested correctly.
+Finally, you need to create a provider code implementation code that will be used to implement the provider's credential validation logic. If the credential validation fails, the `ToolProviderCredentialValidationError` exception will be thrown. After successful validation, the `google_search` tool service will be requested correctly.
 
 Create a `google.py` file in the `/provider` directory with the following code:
 
