@@ -56,7 +56,7 @@ The plugin also needs to read permissions from the Dify platform to connect prop
 * Enable persistent storage Storage, allocate default size storage
 * Allow registration of Endpoint
 
-> Use the arrow keys to select permissions within the terminal and the "Tab" button to grant permissions.
+> Use the arrow keys to select permissions within the terminal and the "Tab" key to grant permissions.
 
 After checking all the permission items, tap Enter to complete the creation of the plug-in. The system will automatically generate the plug-in project code.
 
