@@ -224,7 +224,7 @@ extra:
   * `max` maximum value, can be set when parameter type is `number`
   * `human_description` introduction displayed in frontend, supports multiple languages
   * `placeholder` prompt text for input fields, can be set when form type is `form` and parameter type is `string`, `number`, or `secret-input`, supports multiple languages
-  * `llm_description` introduction passed to LLM. To help LLM better understand this parameter, please write as detailed information as possible about this parameter here so that LLM can understand it
+  * `llm_description` introduction passed to LLM. To help LLM better understand this parameter, please write as detailed information as possible about this parameter here
 
 #### 3. Preparation of tool codes
 
