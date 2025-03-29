@@ -11,12 +11,19 @@ You do not need to implement `validate_provider_credential` in your provider con
 Below are the steps to integrate a custom model:
 
 1. **Create a Model Provider File**\
+
    Identify the model types your custom model will include.
+   
 2. **Create Code Files by Model Type**\
+
    Depending on the model’s type (e.g., `llm` or `text_embedding`), create separate code files. Ensure that each model type is organized into distinct logical layers for easier maintenance and future expansion.
+   
 3. **Develop the Model Invocation Logic**\
+
    Within each model-type module, create a Python file named for that model type (for example, `llm.py`). Define a class in the file that implements the specific model logic, conforming to the system’s model interface specifications.
+   
 4. **Debug the Plugin**\
+
    Write unit and integration tests for the new provider functionality, ensuring that all components work as intended.
 
 ***
