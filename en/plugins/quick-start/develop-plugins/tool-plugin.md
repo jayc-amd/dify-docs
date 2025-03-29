@@ -53,7 +53,7 @@ The plugin also needs to read permissions from the Dify platform to connect prop
 
 * Tools
 * Apps
-* Enable persistent storage Storage, allocate default size storage
+* Storage, enable persistent storage and allocate default size storage
 * Allow registration of Endpoint
 
 > Use the arrow keys to select permissions within the terminal and the "Tab" button to grant permissions.
