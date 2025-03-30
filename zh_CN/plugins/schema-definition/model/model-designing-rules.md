@@ -178,7 +178,7 @@
 * `text-input` 文本输入组件
 * `secret-input` 密码输入组件
 * `select` 单选下拉
-* `radio` Radio 组件
+* `radio` 单选按钮组件
 * `switch` 开关组件，仅支持 `true` 和 `false`
 
 #### FormOption
