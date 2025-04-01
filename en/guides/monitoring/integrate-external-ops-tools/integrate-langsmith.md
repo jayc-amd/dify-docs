@@ -137,7 +137,7 @@ Detailed LLM operation logs through LangSmith will help you optimize the perform
 | -------------------------------- | ---------------------------- |
 | message\_id                      | id                           |
 | user\_session\_id                | - placed in metadata         |
-| “message\_{id}"                  | name                         |
+| "message\_{id}"                  | name                         |
 | start\_time                      | start\_time                  |
 | end\_time                        | end\_time                    |
 | inputs                           | inputs                       |
