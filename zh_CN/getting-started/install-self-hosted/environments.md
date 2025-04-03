@@ -128,7 +128,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 * DB\_PASSWORD：密码
 * DB\_HOST：数据库 host
 * DB\_PORT：数据库端口号，默认 5432
-* DB\_DATABASE：数据库 database
+* DB\_DATABASE：数据库名称
 * SQLALCHEMY\_POOL\_SIZE：数据库连接池大小，默认 30 个连接数，可适当增加。
 * SQLALCHEMY\_POOL\_RECYCLE：数据库连接池回收时间，默认 3600 秒。
 * SQLALCHEMY\_ECHO：是否打印 SQL，默认 false。
